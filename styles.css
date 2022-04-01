@@ -39,6 +39,7 @@ header{
     background-position: center ;
     -webkit-background-clip: text ;
     font-style: normal;
+
       
     
 }
@@ -47,6 +48,14 @@ header{
          color: black;
          font-size: 30px;
          padding: 20px;
+         animation:skew 3s infinite;
+         transform: skew(140deg);
+         animation-direction:alternate;
+     }
+     @keyframes skew {
+         0%{transform:skew(20deg, 20deg);
+        }
+        100%{transform:skew (20deg, 20deg); } 
      }
      h3{
          color: black;
