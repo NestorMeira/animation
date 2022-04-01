@@ -13,8 +13,17 @@ header{
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 5px;
-  
+    animation-name: mianimacion;
+    animation-duration: 5s;
 
+}
+@keyframes mianimacion {
+    0%{background:rgb(43, 42, 42); ;}
+        50%{background: gray;}
+        70%{background: white;}
+        100%{background: black;}
+    
+    
 }
 
  h1{
