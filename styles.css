@@ -147,8 +147,8 @@ nav a {
 
 
 footer  {
-    background-color:#a9e9a4 ;
- 
+  background-color:#a9e9a4 ;
+  margin-top: 10px; 
   padding: 30px;
   border-radius: 10px;
   text-align: right;
@@ -265,6 +265,8 @@ text-align: center;
     padding: auto;
 
 }
+
+
 
    
 /*media quieri*/
