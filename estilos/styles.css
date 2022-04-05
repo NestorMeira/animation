@@ -1,14 +1,16 @@
 body{
     margin: 0;
     padding: 0;
-    
     font-style: oblique;
     font-family:'Times New Roman', Times, serif;
+    background: rgb(9,121,63);
+background: linear-gradient(320deg, rgba(9,121,63,1) 0%, rgba(9,162,118,1) 7%, rgba(184,227,181,1) 19%, rgba(143,190,146,1) 90%);
 }
 
 
 header{
-    background-color:rgb(43, 42, 42);
+    background: rgb(73,130,69);
+    background: linear-gradient(320deg, rgba(73,130,69,1) 8%, rgba(0,0,0,1) 18%, rgba(57,57,57,1) 94%);
     display: flex;
     align-items: center;
     border-radius: 5px;
@@ -20,9 +22,7 @@ header{
     0%{background:rgb(43, 42, 42); ;}
         50%{background: gray;}
         70%{background: white;}
-        100%{background: black;}
-    
-    
+        100%{background: black;}    
 }
 
  h1{
@@ -37,11 +37,28 @@ header{
     background-size: cover;
     background-position: center ;
     -webkit-background-clip: text ;
-    font-style: normal;
-
-      
+    font-style: normal;      
     
 }
+nav{
+    display: flex;
+    flex-direction: row;
+    background: rgb(9,121,63);
+background: linear-gradient(320deg, rgba(9,121,63,1) 0%, rgba(9,162,118,1) 7%, rgba(184,227,181,1) 19%, rgba(143,190,146,1) 90%);
+   margin: 0;
+    border-radius: 5px; 
+
+}
+
+    
+
+nav a {
+    color:darkslategray;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 20px;}
+
 
      h2{
          color: black;
@@ -74,23 +91,6 @@ img.section {
     border-radius: 50px;
    margin: 0 auto;
 }
-nav{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(136, 209, 136);
-   margin: 0;
-    border-radius: 5px; 
-
-}
-
-    
-
-nav a {
-    color:darkslategray;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-style: normal;
-    font-size: 20px;}
 
     .fila {
         display: flex;
@@ -98,7 +98,8 @@ nav a {
         text-align: justify;
     }
      aside {flex:50% ;
-    background-color: #a9e9a4;
+        background: rgb(9,121,63);
+        background: linear-gradient(320deg, rgba(9,121,63,1) 0%, rgba(9,162,118,1) 7%, rgba(184,227,181,1) 19%, rgba(143,190,146,1) 90%);
     padding: 20px;
     margin-top: 50px;
     margin-left: 2px;
@@ -120,7 +121,8 @@ nav a {
 
     section { 
         flex: 50%;
-        background-color:rgb(250, 189, 250) ;
+        background: rgb(9,121,63);
+background: linear-gradient(320deg, rgba(9,121,63,1) 0%, rgba(9,162,118,1) 7%, rgba(184,227,181,1) 19%, rgba(143,190,146,1) 90%);
         padding: 20px;
         margin-left: 8px;
         margin-right: 8px;
@@ -129,6 +131,10 @@ nav a {
         border-radius: 10px;
         box-sizing: border-box;
         }
+    section img{
+        width: 400px;
+        height: 400px;;
+    }
 
     h4 {
         font-size: 25px;
@@ -137,7 +143,6 @@ nav a {
     }
        section p{
            font-size: 20px;
-      
        } 
  
     p.lumi {
@@ -147,7 +152,8 @@ nav a {
 
 
 footer  {
-  background-color:#a9e9a4 ;
+    background: rgb(9,121,63);
+    background: linear-gradient(320deg, rgba(9,121,63,1) 0%, rgba(9,162,118,1) 7%, rgba(184,227,181,1) 19%, rgba(143,190,146,1) 90%);
   margin-top: 10px; 
   padding: 30px;
   border-radius: 10px;
@@ -163,9 +169,8 @@ footer  {
    
   }
 
-  /*img*/
+  /*galeria*/
    
-
 h1.img {
     text-align: center;
     padding: 30px;
@@ -222,10 +227,7 @@ h3{
         background-position: top;
     }
     
-       
-
-
-    /* nosotros */
+       /* nosotros */
 
     .nosotros{
         display: flex;
@@ -243,18 +245,11 @@ h3{
         border-radius: 5px;
         padding: 10px;
         margin-bottom: 20px;
-
-        
-        
-
     }
 
     div.nosotros article img {
         width: 85%
-        
-
-
-        }
+          }
 
 .titulo-nosotros {
 text-align: center;
@@ -265,11 +260,12 @@ text-align: center;
     padding: auto;
 
 }
-
-
-
-   
-/*media quieri*/
+form input{
+    background: rgb(97,152,93);
+background: linear-gradient(320deg, rgba(97,152,93,1) 4%, rgba(207,227,217,1) 18%);
+}
+  
+   /*media quieri*/
     
     @media screen and (max-width:645px){
 
@@ -288,8 +284,6 @@ text-align: center;
        font-size: 50px;
     }
 
-  
-
     .nosotros img{
         padding: 10px;
     }
@@ -297,8 +291,6 @@ text-align: center;
     @media screen and (max-width:449px){
         aside {
             width:400px ;
-        
-
         }
       section {
           width: 300px;
@@ -309,5 +301,3 @@ section img {
 }
         
     }
-
-  
