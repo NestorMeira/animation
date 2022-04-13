@@ -1,0 +1,14 @@
+article{
+    background-color: rgb(141, 163, 163);
+    h2{
+        font-size: 30px;
+        &:hover{
+            font-size: 45px;
+            color: aqua;
+        }
+    }
+    p{
+        font-family: cursive;
+        font-size: 23px;
+    }
+}
