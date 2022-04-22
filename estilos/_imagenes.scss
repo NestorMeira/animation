@@ -1,0 +1,49 @@
+h1.img {
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+}
+
+.imagenesGaleria {
+display: grid;
+height: 550px;
+grid-template-columns: 1fr 1fr 1fr;
+ background-color: #a9e9a4;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 20px;
+margin-bottom: 20px;
+border-radius: 10px;
+
+ div {
+    width: auto;
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;}
+
+
+.diva{
+        background-image: url(lazo.jpg);
+
+    }
+.divb {
+       background-image: url(collar.jpg); 
+    }
+
+.divc{
+        background-image: url(potus.jpg);
+    }
+.divd{
+        background-image: url(costilla.jpg);
+    }
+.dive {
+        background-image: url(aloe.jpg);
+    }
+
+.divf {
+        background-image: url(jade.jpg);
+        background-position: top;
+    }
+}
