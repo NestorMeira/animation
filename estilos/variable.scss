@@ -1,0 +1,42 @@
+$fondo: rgb(9,121,63)
+linear-gradient(320deg, rgba(9,121,63,1) 0%, rgba(9,162,118,1) 7%, rgba(184,227,181,1) 19%, rgba(143,190,146,1) 90%);
+
+
+
+
+/*----  MAP-GET  -----*/
+
+$estilo:(
+    color:rgb(19, 2, 2),
+    centro:center,
+    tFuente:30px,
+
+);
+
+h2{
+    color: map-get($estilo,color);
+    text-align: map-get($estilo,centro);
+    font-size: map-get($estilo,tFuente);
+}
+
+ /*----- EXTEND-----*/
+
+ 
+h3{
+    background-color: antiquewhite;
+    border-bottom: 2px solid black;}
+
+h4{
+    @extend h3;
+    border-radius: 2px solid rgb(27, 6, 6);
+}
+
+ /*---MIXIN---*/
+
+ @mixin tamaño($ancho,$alto) {
+     height: $alto;
+     width: $ancho;
+ }
+ h4{
+  @include tamaño(auto,40px);
+ }

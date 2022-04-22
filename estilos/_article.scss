@@ -1,14 +1,60 @@
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
 article{
-    background-color: rgb(141, 163, 163);
+    background:$fondo;
+
     h2{
+        color: black;
         font-size: 30px;
-        &:hover{
-            font-size: 45px;
-            color: aqua;
-        }
+        padding: 20px;
+        animation:skew 2s;
+        transform: skew(180deg);
+        animation-direction:alternate;
     }
+    @keyframes skew {
+        0%{transform:skew(20deg, 20deg);
+       }
+       100%{transform:skew (20deg, 20deg); } 
+    }
+
     p{
         font-family: cursive;
         font-size: 23px;
     }
+}
+
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+   margin-left: 20px;
+   margin-right: 20px;
+   
+}
+
+div.nosotros article {
+    
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+div.nosotros article img {
+    width: 85%
+      }
+
+.titulo-nosotros {
+text-align: center;
+}
+.parrafo-nosotros {
+text-align: justify ;
+font-size: 25px;
+padding: auto;
+
 }
