@@ -36,7 +36,7 @@ header {
   100% {
     background: black; } }
   header h1 {
-    width: 100%;
+    width: auto;
     margin: auto;
     color: transparent;
     text-align: center;
@@ -56,6 +56,10 @@ nav {
   background: linear-gradient(320deg, #09793f 0%, #09a276 7%, #b8e3b5 19%, #8fbe92 90%);
   margin: 0;
   border-radius: 5px; }
+  nav ul {
+    list-style-type: none; }
+  nav li {
+    display: inline-block; }
   nav a {
     color: darkslategray;
     padding: 14px 20px;
@@ -64,6 +68,9 @@ nav {
     font-size: 20px; }
     nav a:hover {
       color: antiquewhite; }
+
+#nevegacion {
+  margin-bottom: 30px; }
 
 .fila {
   display: flex;
@@ -114,6 +121,9 @@ div.nosotros article img {
   font-size: 25px;
   padding: auto; }
 
+.pCuidados3 {
+  font-size: 26px; }
+
 footer {
   background: #09793f linear-gradient(320deg, #09793f 0%, #09a276 7%, #b8e3b5 19%, #8fbe92 90%);
   margin-top: 10px;
@@ -149,6 +159,7 @@ section {
     width: 400px;
     height: 400px; }
   section h4 {
+    background: #c3dcc3;
     font-size: 25px;
     text-align: center;
     margin: 10px; }
@@ -209,7 +220,22 @@ aside {
   border-radius: 10px;
   box-sizing: border-box; }
 
+.pCuidados1 {
+  font-size: 27px; }
+
+.pCuidados2 {
+  font-size: 26px; }
+
 @media screen and (max-width: 449px) {
+  nav {
+    flex-direction: column; }
+  .parrafo-nosotros {
+    font-size: 20px; }
+  .imagenesGaleria {
+    grid-template-columns: auto;
+    height: 1800px; }
+  .nosotros img {
+    padding: 10px; }
   aside {
     width: 400px; }
   section {
@@ -217,4 +243,13 @@ aside {
   section img {
     width: 100px; }
   header h1 {
-    font-size: 30%; } }
+    font-size: 40px; }
+  article h4 {
+    font-size: 20px;
+    height: 55px; }
+  article p {
+    padding: 8px; }
+  .parrafo-nosotros {
+    padding: 3px; }
+  .img_nosotros {
+    width: 400px; } }
